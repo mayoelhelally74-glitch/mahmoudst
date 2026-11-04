@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="اكتشفي أحدث صيحات الموضة وتسوقي قطعك المفضلة من menna store."
+    />
+    <title>menna store | موضة على ذوقك</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      <p>شحن مجاني للطلبات فوق 999 جنيه <span>✦</span> خصم 15% على أول طلب</p>
+    </div>
+
+    <header class="site-header">
+      <div class="header-main page-width">
+        <a class="brand" href="#" aria-label="menna store - الصفحة الرئيسية">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span>menna store<small>موضة على ذوقك</small></span>
+        </a>
+
+        <form class="search" role="search">
+          <label class="sr-only" for="search-input">ابحثي عن منتج</label>
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="بتدوري على إيه؟"
+            autocomplete="off"
+          />
+          <button type="submit">بحث</button>
+        </form>
+
+        <div class="header-actions">
+          <button class="icon-button favorite-shortcut" type="button" aria-label="المفضلة">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
+            </svg>
+          </button>
+          <button class="cart-button" id="cart-open" type="button" aria-label="افتح سلة التسوق">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 3h2l2.4 12.1a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L22 8H6" />
+              <circle cx="10" cy="21" r="1" />
+              <circle cx="18" cy="21" r="1" />
+            </svg>
+            <span>السلة</span>
+            <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="main-nav page-width" aria-label="الأقسام الرئيسية">
+        <a class="active" href="#products">الرئيسية</a>
+        <a href="#products" data-nav-category="نساء">ملابس حريمي</a>
+        <a href="#products" data-nav-category="أحذية">أحذية وشنط</a>
+        <a href="#products" data-nav-category="إكسسوارات">إكسسوارات</a>
+        <a class="sale-link" href="#products" data-nav-category="العروض">العروض</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero page-width" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="eyebrow"><span></span> تشكيلة الموسم وصلت</span>
+          <h1 id="hero-title">ستايلك يبدأ<br />من <em>menna store</em></h1>
+          <p>اختاري إطلالتك الجديدة من قطع مختارة بعناية، وخلي كل يوم له حكاية.</p>
+          <a class="primary-button" href="#products">اكتشفي التشكيلة <span aria-hidden="true">←</span></a>
+          <div class="hero-note"><span>✦</span> قطع بتحبيها، وأسعار على قدّك</div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=85"
+            alt="إطلالات عصرية بألوان الموسم"
+          />
+          <div class="image-label"><strong>اختاري اللي يشبهك</strong><span>تشكيلة خريف 2026</span></div>
+          <span class="hero-sticker">NEW<br /><small>SEASON</small></span>
+        </div>
+      </section>
+
+      <section class="category-section page-width" aria-labelledby="category-title">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">تسوقي على مزاجك</span>
+            <h2 id="category-title">كل اللي بتحبيه في مكان واحد</h2>
+          </div>
+          <a class="text-link" href="#products">كل الأقسام <span aria-hidden="true">←</span></a>
+        </div>
+        <div class="category-grid">
+          <button class="category-card" type="button" data-category="نساء">
+            <span class="category-icon peach">◈</span><span>حريمي</span><small>ستايل من غير مجهود</small>
+          </button>
+          <button class="category-card" type="button" data-category="أحذية">
+            <span class="category-icon mint">⌁</span><span>أحذية وشنط</span><small>كمّلي إطلالتك</small>
+          </button>
+          <button class="category-card" type="button" data-category="إكسسوارات">
+            <span class="category-icon yellow">✧</span><span>إكسسوارات</span><small>التفاصيل بتفرق</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="products-section page-width" id="products" aria-labelledby="products-title">
+        <div class="section-heading product-heading">
+          <div>
+            <span class="section-kicker">اختيارات ليكي</span>
+            <h2 id="products-title">قطع هتخطف قلبك <span>♡</span></h2>
+          </div>
+          <a class="text-link" href="#products" id="clear-filter">عرض كل المنتجات <span aria-hidden="true">←</span></a>
+        </div>
+        <div class="filter-row" role="group" aria-label="تصفية المنتجات">
+          <button class="filter-chip selected" type="button" data-filter="الكل">الكل</button>
+          <button class="filter-chip" type="button" data-filter="نساء">حريمي</button>
+          <button class="filter-chip" type="button" data-filter="أحذية">أحذية وشنط</button>
+          <button class="filter-chip" type="button" data-filter="إكسسوارات">إكسسوارات</button>
+          <button class="filter-chip" type="button" data-filter="العروض">عروض</button>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+        <p class="empty-state" id="empty-state" hidden>ملقيناش منتجات مطابقة لبحثك. جربي كلمة تانية.</p>
+      </section>
+
+      <section class="newsletter">
+        <div class="newsletter-inner page-width">
+          <div><span class="section-kicker">خليكي أول واحدة تعرفي</span><h2>رسائلنا فيها حاجات حلوة ✦</h2><p>اشتركي عشان يوصلك جديدنا وعروضنا أول بأول.</p></div>
+          <form class="newsletter-form" id="newsletter-form">
+            <label class="sr-only" for="email-input">بريدك الإلكتروني</label>
+            <input id="email-input" type="email" placeholder="بريدك الإلكتروني" required />
+            <button type="submit">اشتركي دلوقتي</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-inner">
+        <a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true">M</span><span>menna store<small>موضة على ذوقك</small></span></a>
+        <p>اختيارات بتشبهك، كل يوم.</p>
+        <a class="footer-whatsapp" href="https://wa.me/201224836685" target="_blank" rel="noopener noreferrer">واتساب: 01224836685</a>
+        <span>© 2026 menna store. كل الحقوق محفوظة.</span>
+      </div>
+    </footer>
+
+    <div class="overlay" id="overlay" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true">
+      <div class="drawer-header"><h2 id="cart-title">سلة التسوق</h2><button class="close-button" id="cart-close" type="button" aria-label="إغلاق السلة">×</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><span>♡</span><strong>لسه السلة فاضية</strong><p>اختاري قطعك المفضلة وخليها هنا.</p><button class="primary-button" id="continue-shopping" type="button">كمّلي تسوق</button></div>
+      <div class="cart-footer" id="cart-footer" hidden><div class="cart-total"><span>الإجمالي</span><strong id="cart-total">0 جنيه</strong></div><button class="checkout-button" id="checkout-button" type="button">اطلبي عبر واتساب</button><small>تفاصيل الشحن هتتأكد معاكي عبر واتساب</small></div>
+    </aside>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
